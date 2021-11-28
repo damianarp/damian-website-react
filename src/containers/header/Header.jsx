@@ -1,10 +1,27 @@
-import React from 'react';
 import './header.css';
+import photo from '../../assets/damian-photo-min.png';
 
 const Header = () => {
+
     return (
-        <div>
-            <h1>Header</h1>
+        <div className='dami__header'  id='home'>
+            <div className='dami__header-content section__padding' >
+                <h1 className='gradient__text'>
+                    I'm <span className='gradient__span'>Damián Arp,</span> I'm Web Developer.
+                </h1>
+                <p>
+                    Full Stack Developer with 2+ years of hands-on experience designing, developing, and implementing applications and solutions using a range of technologies and programming languages. Seeking to leverage broad development experience and hands-on technical expertise in a challenging role as a Full Stack Developer.
+                </p>
+                <div className='dami__header-content__input'>
+                    <input placeholder="Let's work together!" disabled />
+                    <button type='button'>
+                        <p><a href="contactme"></a>Contact Me!</p>
+                    </button>
+                </div>
+            </div>
+            <div className='dami__header-image'>
+                <img src={photo} alt='Damian face'/>
+            </div>
         </div>
     )
 }
