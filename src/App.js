@@ -21,9 +21,9 @@ const App = () => {
     }, []);
 
     return (
-        <div className='App'>
+        <div className='App gradient__bg'>
             <div ref={container} style={{position:'absolute', zIndex:'0'}}></div> 
-            <div className='gradient__bg'>
+            <div>
                 <Navbar />
                 <Header />
             </div>

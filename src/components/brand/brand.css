@@ -1,0 +1,16 @@
+.dami__brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dami__brand div {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    min-width: 60px;
+    margin: 1rem;
+}

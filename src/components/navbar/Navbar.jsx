@@ -7,11 +7,11 @@ import './navbar.css';
 
 const Menu = () => (
     <>
-        <p><a href="home"></a>Home</p>
-        <p><a href="aboutme"></a>About Me</p>
-        <p><a href="resume"></a>Resume</p>
-        <p><a href="projects"></a>Projects</p>
-        <p><a href="contactme"></a>Contact Me</p>
+        <a href="#home"><p>Home</p></a>
+        <a href="#aboutme"><p>About Me</p></a>
+        <a href="#resume"><p>Resume</p></a>
+        <a href="#projects"><p>Projects</p></a>
+        <a href="#contactme"><p>Contact Me</p></a>
     </>
 );
 
