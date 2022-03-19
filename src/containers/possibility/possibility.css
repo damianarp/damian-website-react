@@ -1,0 +1,65 @@
+.dami__possibility {
+    display: flex;
+    flex-direction: row;
+}
+
+.dami__possibility-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.dami__possibility-image img {
+    width: 100%;
+}
+
+.dami__possibility-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dami__possibility-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 65px;
+}
+
+@media screen and (max-width: 1800px) { 
+    .dami__possibility-content h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+@media screen and (max-width: 950px) { 
+    .dami__possibility {
+        flex-direction: column;
+    }
+
+    .dami__possibility-image {
+        margin: 1rem 0;
+    }
+
+    .dami__possibility-image img {
+        width: 80%;
+    }
+
+    .dami__possibility-content {
+        margin-top: 2rem;
+    }
+
+    .dami__possibility-content h1 {
+        font-size: 50px;
+        line-height: 35px;
+    }
+
+    .dami__possibility-content h1 {
+        line-height: 55px;
+    }
+}

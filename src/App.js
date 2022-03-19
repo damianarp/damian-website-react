@@ -28,7 +28,7 @@ const App = () => {
                         width: '100%',
                         }}></div> 
             <div>
-                <Navbar />
+                <Navbar/>
                 <Header />
             </div>
             <div>

@@ -1,5 +1,5 @@
 import './header.css';
-import photo from '../../assets/damian-photo-min.png';
+import photo from '../../assets/damian-photo-min.webp';
 
 const Header = () => {
 

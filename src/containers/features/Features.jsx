@@ -12,14 +12,14 @@ const workExperience = [
     {
         title: 'Full Stack Web Developer',
         subtitle: 'Regia Producciones - La Plata',
-        text: 'I developed an institutional website and an admin area. Duration: 2 months. HTML, CSS, JS, jQuery, Bootstrap, PHP, mySQL database. Contact: Aretha Resenido. Phone: (+54) 221 420 3576',
+        text: 'I developed an institutional website and an admin area. Duration: 2 months. HTML, CSS, JS, jQuery, Bootstrap, PHP, mySQL database.',
         date: '2019 - Currently'
     },
     {
         title: 'Sales Advisor & Customer Service',
         subtitle: 'Prüne - La Plata',
-        text: 'Experimented sales advisor. Control and replacement of merchandise. Fulfillment of sales objectives. Cashier. Cash openings and closings. Presea system. Smart RFID. Contact: Constanza Villena. Phone: (+54) 221 400 4192',
-        date: '2014 - Currently'
+        text: 'Experimented sales advisor. Control and replacement of merchandise. Fulfillment of sales objectives. Cashier. Cash openings and closings. Presea ERP system. Smart RFID.',
+        date: '2014 - 2022'
     },
     {
         title: 'Photo Retoucher & Designer',
@@ -73,7 +73,7 @@ const courses = [
 
 const Features = () => {
     return (
-        <div>
+        <div id="resume">
             <div className="dami__features section__padding dami__features-grid" id="features">
                 <div className="dami__features-heading">
                     <h1 className='gradient__text'>Work Experience</h1>
