@@ -16,13 +16,17 @@ const App = () => {
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            animationData: require('./assets/wave.json')
+            animationData: require('./assets/sparks2.json')
         })
     }, []);
 
     return (
         <div className='App gradient__bg'>
-            <div ref={container} style={{position:'absolute', zIndex:'0'}}></div> 
+            <div ref={container} 
+                style={{position:'absolute', 
+                        zIndex:'0', 
+                        width: '100%',
+                        }}></div> 
             <div>
                 <Navbar />
                 <Header />

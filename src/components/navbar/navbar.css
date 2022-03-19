@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 6rem;
+    margin-bottom: 2rem;
 }
 
 .dami__navbar-links {
@@ -18,8 +19,7 @@
 }
 
 .dami__navbar-links_logo img {
-    width: 150px;
-    height: 40px;
+    width: 200px;
 }
 
 .dami__navbar-links_container {
@@ -31,10 +31,10 @@
     color: #fff;
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 18;
+    font-size: 25px;
     line-height: 25px;
     text-transform: capitalize;
-    margin: 0 1rem;
+    margin: 0 2rem;
     cursor: pointer;
 }
 

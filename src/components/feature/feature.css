@@ -1,8 +1,11 @@
+.dami__features-grid {
+    display: inline-grid;
+    grid-template-columns: 40% 40%;
+    justify-items: stretch;
+    gap: 0 10%;
+}
 .dami__features {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
 }
 
 .dami__features-container__feature {
@@ -11,14 +14,24 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
-
     margin: 1rem;
 }
 
+.dami__features-container__feature__no-flex {
+    display: inline;
+}
+
+.dami__features-heading {
+    font-family: var(--font-family);
+    text-align: end;
+}
+
 .dami__features-container__feature-title {
-    flex: 1;
-    max-width: 180px;
-    margin-right: 2rem;
+    max-width: 450px;
+}
+
+.dami__features-container__order .dami__features-container__feature {
+    flex-direction: column;
 }
 
 .dami__features-container__feature-title h1 {
@@ -26,6 +39,20 @@
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    
+}
+
+.dami__features-container__feature-title_courses h1 {
+    width: 600px;
+}
+
+.dami__features-container__feature-title p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
     letter-spacing: -0.04em;
     color: #FFFFFF;
 }
@@ -41,7 +68,16 @@
 .dami__features-container__feature-text {
     flex: 2;
     max-width: 390px;
-    display: flex;
+    display: block;
+}
+
+.dami__features-container__feature-text p:first-child {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: white;
 }
 
 .dami__features-container__feature-text p {
