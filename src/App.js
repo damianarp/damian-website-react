@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import { AboutMe, Features, Footer, Header, Possibility, Projects } from './containers';
-import { CTA, Brand, Navbar } from './components';
+import { CTA, Brand, Navbar, Contact } from './components';
 import lottie from 'lottie-web';
 
 import './App.css';
@@ -38,6 +38,7 @@ const App = () => {
                 <Possibility />
                 <CTA />
                 <Projects />
+                <Contact />
                 <Footer />
             </div>
         </div>

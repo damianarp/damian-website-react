@@ -18,7 +18,7 @@ const Header = () => {
                 <div className='dami__header-content__input'>
                     <input placeholder="Let's work together!" disabled />
                     <button type='button'>
-                        <p><a href="contactme"></a>Contact Me!</p>
+                        <a href="#contactme"><p>Contact Me!</p></a>
                     </button>
                 </div>
             </div>
