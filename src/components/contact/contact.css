@@ -110,6 +110,11 @@
     font-size: 15px;
 }
 
+button.Toastify__close-button {
+    width: 50px;
+    height: 20px;
+}
+
 @media screen and (max-width: 700px) {
     .dami__contact-heading h1 {
         font-size: 46px;

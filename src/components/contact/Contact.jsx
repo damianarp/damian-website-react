@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './contact.css';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default class Contact extends Component {
+    
     constructor() {
         super();
         this.state = {
@@ -35,7 +38,15 @@ export default class Contact extends Component {
                 console.log('FAILED...', err);
             });
 
-            alert('Demo Form is submited');
+            toast("Your message has been sent!", {
+                position: toast.POSITION.TOP_RIGHT,
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                className: 'toast-success'
+            });
         }
     }
 
@@ -78,6 +89,7 @@ export default class Contact extends Component {
     render() {
 
         return (
+
             <div className='dami__contact section__padding' id='contactme'>
                 <div className="dami__contact-heading">
                     <h1 className="gradient__text">Do you want to step in to the future before others</h1>
@@ -86,19 +98,19 @@ export default class Contact extends Component {
                     <div className="dami__contact-container_row">
                         <div className="form-group">
                             <div className='dami__contact-container_row__input'>
-                                <input type="text" id="name" name="name" value={this.state.input.name} onChange={this.handleChange} class="form-control" placeholder="Enter your name" required />
+                                <input type="text" id="name" name="name" value={this.state.input.name} onChange={this.handleChange} className="form-control" placeholder="Enter your name" required />
                                 <div className="text-danger">{this.state.errors.name}</div>
                             </div>
                         </div>
                         <div className="form-group">
                             <div className='dami__contact-container_row__input'>
-                                <input type="email" id="email" name="email" value={this.state.input.email} onChange={this.handleChange} class="form-control" placeholder="Enter your email" required />
+                                <input type="email" id="email" name="email" value={this.state.input.email} onChange={this.handleChange} className="form-control" placeholder="Enter your email" required />
                                 <div className="text-danger">{this.state.errors.email}</div>
                             </div>
                         </div>
                         <div className="form-group">
                             <div className='dami__contact-container_row__input-message'>
-                                <textarea type="text" id="comment" name="comment" value={this.state.input.comment} onChange={this.handleChange} class="form-control" placeholder="Enter your comment" required />
+                                <textarea type="text" id="comment" name="comment" value={this.state.input.comment} onChange={this.handleChange} className="form-control" placeholder="Enter your comment" required />
                                 <div className="text-danger">{this.state.errors.comment}</div>
                             </div>
                         </div>
@@ -106,6 +118,7 @@ export default class Contact extends Component {
                     <button type='submit'>
                         <p>Send Email</p>
                     </button>
+                    <ToastContainer />
                 </form>
             </div>
         )
