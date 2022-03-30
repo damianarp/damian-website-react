@@ -9,5 +9,6 @@ import php from '../../assets/php.svg';
 import mysql from '../../assets/mysql.svg';
 import mongodb from '../../assets/mongodb.svg';
 import git from '../../assets/git.svg';
+import csharp from '../../assets/csharp.svg';
 
-export { html, css, js, react, angular, nodejs, java, php, mysql, mongodb, git }
+export { html, css, js, react, angular, csharp, nodejs, java, php, mysql, mongodb, git }

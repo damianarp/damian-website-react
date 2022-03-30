@@ -1,6 +1,6 @@
 import React from 'react';
 import './brand.css';
-import { html, css, js, react, angular, nodejs, java, php, mysql, mongodb, git } from './imports';
+import { html, css, js, react, angular, csharp, nodejs, java, php, mysql, mongodb, git } from './imports';
 
 const Brand = () => {
     return (
@@ -16,6 +16,9 @@ const Brand = () => {
             </div>
             <div>
                 <img src={react} alt="React" />
+            </div>
+            <div>
+                <img src={csharp} alt="C#" />
             </div>
             <div>
                 <img src={angular} alt="Angular" />

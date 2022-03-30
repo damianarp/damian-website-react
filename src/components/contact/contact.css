@@ -47,6 +47,7 @@
     min-height: 50px;
     font-family: var(--font-family);
     font-size: 20px;
+    font-weight: 800;
     line-height: 27px;
     background: #fff;
     padding: 0 1rem;
@@ -54,6 +55,11 @@
     color: #4F4F4F;
     border-radius: 5px;
     border: none;
+}
+
+.dami__contact-container_row__input input::placeholder {
+    color: #4F4F4F;
+    font-weight: normal;
 }
 
 .dami__contact-container_row__input-message {
@@ -66,9 +72,9 @@
 
 .dami__contact-container_row__input-message textarea {
     width: 100%;
-    
     font-family: var(--font-family);
     font-size: 20px;
+    font-weight: 800;
     line-height: 27px;
     background: #fff;
     padding: 1rem 1rem 10rem 1rem;
@@ -77,6 +83,11 @@
     outline: none;
     border: none;
     resize: none;
+}
+
+.dami__contact-container_row__input-message textarea::placeholder {
+    color: #4F4F4F;
+    font-weight: normal;
 }
 
 .dami__contact-container button {
@@ -99,8 +110,47 @@
     font-size: 15px;
 }
 
-@media screen and (max-width: 700px) { 
+@media screen and (max-width: 700px) {
+    .dami__contact-heading h1 {
+        font-size: 46px;
+        line-height: 52px;
+    }
+
     .dami__contact-container {
-        width: 200px;
+        padding: 0 4rem;
+    }
+
+    .dami__contact-container_row {
+        width: 100%;
+    }
+
+    .dami__contact-container_row__input {
+        width: 100%;
+    }
+
+    .dami__contact-container_row__input-message {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) { 
+    .dami__contact-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .dami__contact-container_row__input input {
+        font-size: 15px;
+    }
+
+    .dami__contact-container_row__input-message textarea {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .dami__contact-container {
+        width: 400px;
+        padding: 0 4rem;
     }
 }

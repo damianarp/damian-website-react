@@ -106,3 +106,44 @@
     line-height: 22px;
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 900px) { 
+    .dami__footer-links {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .dami__footer-links div {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dami__footer-links_logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dami__footer-links_div h4 {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .dami__footer-heading h1 {
+        font-size: 46px;
+        line-height: 52px;
+    }
+
+    .dami__footer-container {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 550px) { 
+    .dami__footer-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+}
