@@ -5,7 +5,7 @@
 
   --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
-  --gradient-span: linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(255,165,0,1) 100%);
+  --gradient-span: linear-gradient(45deg, #ffff00 0%, #ffa500 100%);
   
   --color-bg: #040C18;
   --color-footer : #031B34;

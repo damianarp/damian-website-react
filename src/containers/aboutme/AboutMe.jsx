@@ -1,10 +1,10 @@
+import { PDFDownloadLink } from '@react-pdf/renderer';
 import React from 'react';
-import { Feature } from '../../components';
+import { Feature, CV } from '../../components';
 import './aboutme.css';
 
 const AboutMe = () => {
 
-    
     return (
         <div className='dami__aboutme section__margin' id='aboutme'>
             <div className='dami__aboutme-feature'>
@@ -14,7 +14,9 @@ const AboutMe = () => {
                 <h1 className='gradient__text'>
                     The possibilities are beyond your imagination
                 </h1>
-                <p>Download Resume</p>
+                <PDFDownloadLink document={<CV />} fileName="CV Damian Arp.pdf">
+                    <button><p>Download Resume</p></button>
+                </PDFDownloadLink>
             </div>
             <div className='dami__aboutme-container'>
                 <Feature title='Goal' text='To be part of a company where I can apply the knowledge acquired during my academic and professional career, being part of the search for innovative solutions, always attending to the goals of the company and the needings of the customers.'/>

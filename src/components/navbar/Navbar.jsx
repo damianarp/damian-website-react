@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import { CV } from '../../components';
 
 import logo from '../../assets/logo.svg';
 
@@ -12,6 +14,10 @@ const Menu = () => (
         <a href="#resume"><p>Resume</p></a>
         <a href="#projects"><p>Projects</p></a>
         <a href="#contactme"><p>Contact Me</p></a>
+        <PDFDownloadLink document={<CV />} fileName="CV Damian Arp.pdf">
+            <button><p>Descargar CV</p></button>
+        </PDFDownloadLink>
+        
     </>
 );
 

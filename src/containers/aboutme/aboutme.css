@@ -51,13 +51,23 @@
     max-width: 510px;
 }
 
-.dami__aboutme-heading p {
+.dami__aboutme-heading button {
+    min-width: 200px;
+    min-height: 50px;
+    background: linear-gradient(90deg, #AE67FA 0%, #F49867 97.4%);
+    padding: 0 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.dami__aboutme-heading button p {
     font-family: var(--font-family);
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
-    color: var(--color-subtext);
-    cursor: pointer;
+    color: black;
 }
 
 .dami__aboutme-container {
@@ -87,8 +97,8 @@
         margin-bottom: 0rem;
     }
 
-    .dami__aboutme-heading p {
-        margin-top: 1rem;
+    .dami__aboutme-heading button {
+        margin-top: 2rem;
     }
 }
 

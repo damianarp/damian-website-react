@@ -1,3 +1,10 @@
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: default;
+}
+
 .dami__navbar {
     display: flex;
     justify-content: space-between;
