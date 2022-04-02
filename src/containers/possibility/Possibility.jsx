@@ -1,6 +1,6 @@
 import React from 'react';
 import './possibility.css';
-import possibilityImage from '../../assets/possibilityImage.webp';
+import possibilityImage from '../../assets/DamiVR.webp';
 
 const Possibility = () => {
     return (
