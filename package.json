@@ -2,12 +2,14 @@
   "name": "damian_web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://damianarp.github.io/damian-website-react",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@react-pdf/renderer": "^2.1.1",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^5.0.0",
     "lottie-web": "^5.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -17,6 +19,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
