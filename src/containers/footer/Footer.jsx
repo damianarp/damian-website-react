@@ -30,7 +30,7 @@ const Footer = () => {
                         <FaBehance/><a href="https://www.behance.net/damianarp" target="_blank" rel="noopener noreferrer">Behance</a>
                     </div>
                     <div className="dami__footer-links_div-icons">
-                        <FaInstagram/><a href="https://www.instagram.com/damianarpok" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <FaInstagram/><a href="https://www.instagram.com/pablodamianarp" target="_blank" rel="noopener noreferrer">Instagram</a>
                     </div>
                 </div>
             </div>
