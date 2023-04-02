@@ -32,7 +32,7 @@ export default class Contact extends Component {
         if (this.validate()) {
             console.log(this.state);
 
-            emailjs.sendForm('service_u3jcjmt', 'template_dl2g6dx', e.target, 'bIMuWdifZbnaMKdtS').then((response) => {
+            emailjs.sendForm('service_iusqqve', 'template_dl2g6dx', e.target, 'bIMuWdifZbnaMKdtS').then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
             }, (err) => {
                 console.log('FAILED...', err);
